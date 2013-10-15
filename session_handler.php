@@ -16,7 +16,7 @@ class SessionHandler implements SessionHandlerInterface {
     protected $session_id = NULL;
     protected $session_written = FALSE;
 
-    const ADMIN_EMAIL = 'it@olwm.com';
+    const ADMIN_EMAIL = 'admin@domain.tld';
 
     /**
      * Automatically sets this instance to database session handler.
@@ -161,22 +161,3 @@ class SessionHandler implements SessionHandlerInterface {
     }
 
 }
-
-//class
-
-/** PHP MySQL Session Handler
-========================
-
-Installation
-----------------------------
-
-First you need to create a table in your database:
-
-    CREATE TABLE `session_handler` (
-    `id` varchar(255) NOT NULL,
-    `data` mediumtext NOT NULL,
-    `timestamp` int(255) NOT NULL,
-    PRIMARY KEY (`id`)
-    ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
- *
- */
