@@ -1,7 +1,5 @@
 <?php
 
-require_once 'session_handler.php';
-
 /**
  * Database Session Hander
  *
@@ -11,7 +9,7 @@ require_once 'session_handler.php';
  * @property boolean $available If memcached passed is legit.
  * @property Memcached $memcached Instance of memcached.
  */
-class SessionHandlerMemcached extends SessionHandler {
+class SessionHandlerMemcached extends PDOSessionHandler {
 
     protected $available = FALSE;
     protected $memcached = NULL;

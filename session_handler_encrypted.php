@@ -1,14 +1,12 @@
 <?php
 
-require_once 'session_handler.php';
-
 /**
  * Database Session Hander
  *
  * @author Brett Millett <bmillett@olwm.com>
  * @version 1.0
  */
-class SessionHandlerEncrypted extends SessionHandler {
+class SessionHandlerEncrypted extends PDOSessionHandler {
     
     protected $key = NULL;
 

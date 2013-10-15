@@ -1,14 +1,12 @@
 <?php
 
-require_once 'session_handler_interface.php';
-
 /**
  * Database Session Hander
  *
  * @author Brett Millett <bmillett@olwm.com>
  * @version 1.0
  */
-class SessionHandler implements SessionHandlerInterface {
+class PDOSessionHandler implements SessionHandlerInterface {
 
     public $table = 'session_handler';
 
